@@ -1,16 +1,16 @@
 # [remove-mov](https://github.com/ryanburnette/go-remove-mov)
 
-Synology downloads of image directories provide a side-by-side .heic and .mov
-file for live images. Videos are a single .mov file. This program looks for
-side-by-side .heic and .mov files and deletes the associated .mov while leaving
-standalone .mov files alone.
+`remove-mov` is a utility designed to clean up image directories downloaded from
+Synology by identifying and removing redundant .mov files associated with live
+images, while preserving standalone .mov video files. It scans for .heic and
+.mov files with matching names and deletes the .mov file, ensuring that only the
+necessary files are retained.
 
 ## Usage
-
-The `[directory]` is assumed to be the current directory unless one is provided.
-
-The `-d` flag gives only a dry run.
 
 ```shell
 remove-mov [directory] [-d]
 ```
+
+- `[directory]` optional, assumes cwd
+- `-d` dry run
