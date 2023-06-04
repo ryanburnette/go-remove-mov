@@ -1,3 +1,3 @@
-module github.com/ryanburnette/go-remove-mov
+module github.com/ryanburnette/synology-image-cleanup
 
 go 1.20

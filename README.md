@@ -1,16 +1,16 @@
-# [remove-mov](https://github.com/ryanburnette/go-remove-mov)
+# [synology-image-cleanup](https://github.com/ryanburnette/synology-image-cleanup)
 
-`remove-mov` is a utility designed to clean up image directories downloaded from
-Synology by identifying and removing redundant .mov files associated with live
-images, while preserving standalone .mov video files. It scans for .heic and
-.mov files with matching names and deletes the .mov file, ensuring that only the
-necessary files are retained.
+`synology-image-cleanup` is a utility designed to clean up image directories
+downloaded from Synology Photos by identifying and removing redundant .mov
+files associated with live images, while preserving standalone .mov video
+files. It scans for .heic and .mov files with matching names and deletes the
+.mov file, ensuring that only the necessary files are retained.
 
 ## Usage
 
 ```shell
-remove-mov [directory] [-d]
+synology-image-cleanup [directory] [-d]
 ```
 
-- `[directory]` optional, assumes cwd
-- `-d` dry run
+-   `[directory]` directory, default: cwd
+-   `-d` dry run
